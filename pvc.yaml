@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: kfsummit-workspace-read-claim
+  namespace: kfsummit
+spec:
+  storageClassName: manual
+  accessModes:
+          - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
